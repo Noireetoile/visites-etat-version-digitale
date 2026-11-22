@@ -1,0 +1,12 @@
+Visites d'État · paquet de contenus pour la version digitale
+
+Ce paquet vient de l'Atelier de l'ouvrage. Il contient toute la matière de chaque visite, en cours comme achevée : à vous de filtrer selon le statut et la colonne « publiable ».
+
+Par visite :
+- manifest.json : la visite, sa phase (prototype, consolidation, version finale), la version du paquet, l'état du livre (BAT) ;
+- content/*.json : un fichier par type (salle, evenement, etape, discours, passage, accord, personne, perspective, media, verif), champs décrits dans schema.json ;
+- textes/ : les discours et les textes de salle en Markdown (un mot entre tirets bas est en italique) ;
+- livre/ : le chapitre du livre, version papier et version livre numérique, et ses médias ;
+- medias/ : les fichiers d'origine ;
+- credits-droits.csv : crédit et droits de chaque média ; un média « non publiable » ne doit pas être mis en ligne ;
+- CHANGELOG.md : ce qui a changé depuis l'envoi précédent.

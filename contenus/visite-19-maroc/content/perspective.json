@@ -1,0 +1,58 @@
+[
+  {
+    "id": "c19-pr-h-famille",
+    "statut": "Prototype",
+    "publiable": true,
+    "salle": "humain",
+    "ordre": 1,
+    "majAt": "2026-11-22T12:00:00Z",
+    "kicker": "L’Album · dîner d’État, 29 octobre 2024",
+    "titre": "Autour de la table d’honneur",
+    "resume": "Le prince héritier Moulay El Hassan, la princesse Lalla Khadija, la famille royale et le couple présidentiel : l’Album s’attarde sur le dîner d’État offert par le Roi.",
+    "photos": "ph-29-a, ph-29-b, ph-29-d",
+    "pages": "29",
+    "origine": "Prototype Maroc (concept 8)"
+  },
+  {
+    "id": "c19-pr-h-invites",
+    "statut": "Prototype",
+    "publiable": true,
+    "salle": "humain",
+    "ordre": 2,
+    "majAt": "2026-11-22T12:00:00Z",
+    "kicker": "L’Album · esplanade du Palais et dîner d’État",
+    "titre": "Les invités",
+    "resume": "Écrivains, cinéastes, acteurs, sportifs, intellectuels : ils sont présents à la cérémonie d’accueil, place du Méchouar, puis au dîner d’État.",
+    "photos": "ph-32-a, ph-32-c, ph-32-b, ph-19-b, ph-19-e, ph-19-a, ph-31-a",
+    "pages": "32, 19, 31, 45",
+    "origine": "Prototype Maroc (concept 8)"
+  },
+  {
+    "id": "c19-pr-h-delegation",
+    "statut": "Prototype",
+    "publiable": true,
+    "salle": "humain",
+    "ordre": 3,
+    "majAt": "2026-11-22T12:00:00Z",
+    "kicker": "Liste non exhaustive",
+    "titre": "La délégation officielle",
+    "resume": "Ministres, parlementaires, administration, institutions, entreprises, artistes, universitaires, associations, sportifs : cent treize noms, dans leurs fonctions d’octobre 2024.",
+    "photos": "ph-20-e, ph-31-b, ph-31-c",
+    "pages": "35, 36, 37, 20, 31",
+    "origine": "Prototype Maroc (concept 8)"
+  },
+  {
+    "id": "c19-pr-h-editeurs",
+    "statut": "Prototype",
+    "publiable": true,
+    "salle": "humain",
+    "ordre": 4,
+    "majAt": "2026-11-22T12:00:00Z",
+    "kicker": "Collection « Visites d’État »",
+    "titre": "Ceux qui font le livre",
+    "resume": "Michel Lafon, éditeur, présente la collection « Visites d’État » comme « un outil de référence et de mémoire ». Patrick Ulanowska en est le directeur.",
+    "photos": "ph-04-a, ph-05-a",
+    "pages": "4, 5, 49, 50",
+    "origine": "Prototype Maroc (concept 8)"
+  }
+]

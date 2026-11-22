@@ -1,0 +1,583 @@
+{
+  "version": 1,
+  "statuts": [
+    "Prototype",
+    "En cours",
+    "Validé",
+    "Écarté"
+  ],
+  "phases": [
+    "Prototype",
+    "Consolidation (après BAT du livre)",
+    "Version finale"
+  ],
+  "salles": [
+    {
+      "id": "seuil",
+      "titre": "Le Seuil",
+      "types": [
+        "salle",
+        "media"
+      ]
+    },
+    {
+      "id": "temps",
+      "titre": "La Galerie du temps",
+      "types": [
+        "salle",
+        "evenement",
+        "media"
+      ]
+    },
+    {
+      "id": "itineraire",
+      "titre": "L'Itinéraire",
+      "types": [
+        "salle",
+        "etape",
+        "media"
+      ]
+    },
+    {
+      "id": "mots",
+      "titre": "La Chambre des mots",
+      "types": [
+        "salle",
+        "discours",
+        "passage",
+        "media"
+      ]
+    },
+    {
+      "id": "engagements",
+      "titre": "Les Engagements",
+      "types": [
+        "salle",
+        "accord",
+        "media"
+      ]
+    },
+    {
+      "id": "humain",
+      "titre": "La Galerie humaine",
+      "types": [
+        "salle",
+        "personne",
+        "perspective",
+        "media"
+      ]
+    },
+    {
+      "id": "horizon",
+      "titre": "L'Horizon",
+      "types": [
+        "salle",
+        "perspective",
+        "media"
+      ]
+    }
+  ],
+  "types": {
+    "salle": {
+      "libelle": "Textes de la salle",
+      "champs": [
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "sousTitre",
+          "libelle": "Sous-titre",
+          "type": "texte"
+        },
+        {
+          "cle": "kicker",
+          "libelle": "Surtitre",
+          "type": "texte"
+        },
+        {
+          "cle": "intro",
+          "libelle": "Introduction",
+          "type": "texte long"
+        },
+        {
+          "cle": "narration",
+          "libelle": "Narration (voix ou texte du fil)",
+          "type": "texte long"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "evenement": {
+      "libelle": "Frise : événements",
+      "champs": [
+        {
+          "cle": "date",
+          "libelle": "Date affichée",
+          "type": "texte"
+        },
+        {
+          "cle": "tri",
+          "libelle": "Année pour le tri",
+          "type": "nombre"
+        },
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "texte",
+          "libelle": "Texte",
+          "type": "texte long"
+        },
+        {
+          "cle": "vitrine",
+          "libelle": "Vitrine",
+          "type": "texte"
+        },
+        {
+          "cle": "source",
+          "libelle": "Origine",
+          "type": "texte"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        },
+        {
+          "cle": "verifs",
+          "libelle": "Vérifications liées",
+          "type": "texte"
+        }
+      ]
+    },
+    "etape": {
+      "libelle": "Itinéraire : étapes",
+      "champs": [
+        {
+          "cle": "jour",
+          "libelle": "Jour",
+          "type": "nombre"
+        },
+        {
+          "cle": "heure",
+          "libelle": "Heure",
+          "type": "texte"
+        },
+        {
+          "cle": "lieu",
+          "libelle": "Lieu",
+          "type": "texte"
+        },
+        {
+          "cle": "lat",
+          "libelle": "Latitude",
+          "type": "texte"
+        },
+        {
+          "cle": "lng",
+          "libelle": "Longitude",
+          "type": "texte"
+        },
+        {
+          "cle": "kicker",
+          "libelle": "Surtitre",
+          "type": "texte"
+        },
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "programme",
+          "libelle": "Programme officiel",
+          "type": "texte long"
+        },
+        {
+          "cle": "resume",
+          "libelle": "Résumé",
+          "type": "texte long"
+        },
+        {
+          "cle": "pourquoi",
+          "libelle": "Pourquoi c'est important",
+          "type": "texte long"
+        },
+        {
+          "cle": "participants",
+          "libelle": "Participants",
+          "type": "texte long"
+        },
+        {
+          "cle": "photos",
+          "libelle": "Photos liées (codes)",
+          "type": "texte"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        },
+        {
+          "cle": "verifs",
+          "libelle": "Vérifications liées",
+          "type": "texte"
+        }
+      ]
+    },
+    "discours": {
+      "libelle": "Discours",
+      "champs": [
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "orateur",
+          "libelle": "Orateur",
+          "type": "texte"
+        },
+        {
+          "cle": "date",
+          "libelle": "Date",
+          "type": "texte"
+        },
+        {
+          "cle": "lieu",
+          "libelle": "Lieu",
+          "type": "texte"
+        },
+        {
+          "cle": "occasion",
+          "libelle": "Occasion",
+          "type": "texte"
+        },
+        {
+          "cle": "source",
+          "libelle": "Source",
+          "type": "texte long"
+        },
+        {
+          "cle": "noteSource",
+          "libelle": "Note sur la source",
+          "type": "texte long"
+        },
+        {
+          "cle": "texte",
+          "libelle": "Texte intégral",
+          "type": "texte intégral"
+        },
+        {
+          "cle": "lienAudio",
+          "libelle": "Enregistrement (lien)",
+          "type": "texte"
+        },
+        {
+          "cle": "transcription",
+          "libelle": "Transcription horodatée (00:00 phrase, une par ligne)",
+          "type": "texte intégral"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "passage": {
+      "libelle": "Passages par thème",
+      "champs": [
+        {
+          "cle": "discours",
+          "libelle": "Discours (code)",
+          "type": "texte"
+        },
+        {
+          "cle": "theme",
+          "libelle": "Thème",
+          "type": "texte"
+        },
+        {
+          "cle": "texte",
+          "libelle": "Extrait",
+          "type": "texte long"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "accord": {
+      "libelle": "Accords",
+      "champs": [
+        {
+          "cle": "n",
+          "libelle": "N°",
+          "type": "nombre"
+        },
+        {
+          "cle": "section",
+          "libelle": "Section",
+          "type": "texte"
+        },
+        {
+          "cle": "intitule",
+          "libelle": "Intitulé",
+          "type": "texte long"
+        },
+        {
+          "cle": "instrument",
+          "libelle": "Instrument",
+          "type": "texte"
+        },
+        {
+          "cle": "nature",
+          "libelle": "Nature",
+          "type": "texte"
+        },
+        {
+          "cle": "partiesFR",
+          "libelle": "Signataires français",
+          "type": "texte"
+        },
+        {
+          "cle": "partiesHote",
+          "libelle": "Signataires du pays hôte",
+          "type": "texte"
+        },
+        {
+          "cle": "secteur",
+          "libelle": "Secteur",
+          "type": "texte"
+        },
+        {
+          "cle": "lieux",
+          "libelle": "Lieux",
+          "type": "texte"
+        },
+        {
+          "cle": "montant",
+          "libelle": "Montant",
+          "type": "texte"
+        },
+        {
+          "cle": "description",
+          "libelle": "Description",
+          "type": "texte long"
+        },
+        {
+          "cle": "resultat",
+          "libelle": "Ce que l'accord engage",
+          "type": "texte long"
+        }
+      ]
+    },
+    "personne": {
+      "libelle": "Personnes",
+      "champs": [
+        {
+          "cle": "n",
+          "libelle": "N°",
+          "type": "nombre"
+        },
+        {
+          "cle": "nom",
+          "libelle": "Nom",
+          "type": "texte"
+        },
+        {
+          "cle": "fonction",
+          "libelle": "Fonction à la date de la visite",
+          "type": "texte"
+        },
+        {
+          "cle": "categorie",
+          "libelle": "Catégorie",
+          "type": "texte"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "perspective": {
+      "libelle": "Vitrines et perspectives",
+      "champs": [
+        {
+          "cle": "kicker",
+          "libelle": "Surtitre",
+          "type": "texte"
+        },
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "resume",
+          "libelle": "Résumé",
+          "type": "texte long"
+        },
+        {
+          "cle": "photos",
+          "libelle": "Photos liées (codes)",
+          "type": "texte"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "media": {
+      "libelle": "Médias",
+      "champs": [
+        {
+          "cle": "type",
+          "libelle": "Type",
+          "type": "liste",
+          "valeurs": [
+            "Photo",
+            "Vidéo",
+            "Son",
+            "Carte",
+            "Document"
+          ]
+        },
+        {
+          "cle": "legende",
+          "libelle": "Légende",
+          "type": "texte long"
+        },
+        {
+          "cle": "description",
+          "libelle": "Description",
+          "type": "texte long"
+        },
+        {
+          "cle": "credit",
+          "libelle": "Crédit",
+          "type": "texte"
+        },
+        {
+          "cle": "droits",
+          "libelle": "Droits",
+          "type": "liste",
+          "valeurs": [
+            "À vérifier",
+            "À demander",
+            "Demandés",
+            "Accordés",
+            "Payés",
+            "Libres de droits"
+          ]
+        },
+        {
+          "cle": "noteDroits",
+          "libelle": "Note sur les droits",
+          "type": "texte"
+        },
+        {
+          "cle": "alt",
+          "libelle": "Texte alternatif",
+          "type": "texte long"
+        },
+        {
+          "cle": "sousTitres",
+          "libelle": "Sous-titres",
+          "type": "liste",
+          "valeurs": [
+            "À faire",
+            "En cours",
+            "Prêts",
+            "Sans objet"
+          ]
+        },
+        {
+          "cle": "lienExterne",
+          "libelle": "Lien externe (vidéo ou son lourd)",
+          "type": "texte"
+        },
+        {
+          "cle": "salle",
+          "libelle": "Salle",
+          "type": "liste",
+          "valeurs": [
+            "seuil",
+            "temps",
+            "itineraire",
+            "mots",
+            "engagements",
+            "humain",
+            "horizon"
+          ]
+        },
+        {
+          "cle": "vitrine",
+          "libelle": "Vitrine",
+          "type": "texte"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    },
+    "verif": {
+      "libelle": "Vérifications éditoriales",
+      "champs": [
+        {
+          "cle": "code",
+          "libelle": "Code",
+          "type": "texte"
+        },
+        {
+          "cle": "niveau",
+          "libelle": "Niveau",
+          "type": "texte"
+        },
+        {
+          "cle": "titre",
+          "libelle": "Titre",
+          "type": "texte"
+        },
+        {
+          "cle": "source",
+          "libelle": "Source",
+          "type": "texte long"
+        },
+        {
+          "cle": "constat",
+          "libelle": "Constat",
+          "type": "texte long"
+        },
+        {
+          "cle": "traitement",
+          "libelle": "Traitement",
+          "type": "texte long"
+        },
+        {
+          "cle": "pages",
+          "libelle": "Pages du livre",
+          "type": "texte"
+        }
+      ]
+    }
+  },
+  "regle": "publiable = droits réglés (Accordés, Payés, Libres de droits) pour les médias ; toujours vrai pour les autres types"
+}

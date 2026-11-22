@@ -1,0 +1,45 @@
+name: Synchroniser les contenus depuis Google Drive
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # chaque nuit vers 4 h, heure de Paris
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-drive
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install google-api-python-client google-auth
+
+      - name: Récupérer le dernier paquet
+        id: sync
+        env:
+          GDRIVE_SA_JSON: ${{ secrets.GDRIVE_SA_JSON }}
+          GDRIVE_FOLDER_ID: ${{ vars.GDRIVE_FOLDER_ID || '1Dwssd7c9EMObZ0ZM6ZNk5ghx_1FDOuYX' }}
+        run: python scripts/sync_from_drive.py
+
+      - name: Enregistrer la nouvelle version
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          MESSAGE: ${{ steps.sync.outputs.message }}
+        run: |
+          git config user.name "Atelier Visites d'État"
+          git config user.email "atelier-visites-etat@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "$MESSAGE"
+          git push

@@ -1,0 +1,83 @@
+{
+  "collection": "Visites d'État",
+  "visite": {
+    "unit": "c19",
+    "num": "19",
+    "titre": "Maroc",
+    "sousTitre": "Partenariat stratégique, Méditerranée et Afrique",
+    "dates": "28-30 oct. 2024",
+    "statutVisite": "Note de méthode"
+  },
+  "phase": "Prototype",
+  "version": 1,
+  "exportAt": "2026-11-22T18:08:57.899Z",
+  "livre": {
+    "batPapier": null,
+    "batLivreNumerique": null,
+    "avancementPapier": "Premier jet",
+    "avancementLivreNumerique": "Premier jet"
+  },
+  "salles": [
+    {
+      "id": "seuil",
+      "titre": "Le Seuil"
+    },
+    {
+      "id": "temps",
+      "titre": "La Galerie du temps"
+    },
+    {
+      "id": "itineraire",
+      "titre": "Maroc · l'itinéraire"
+    },
+    {
+      "id": "mots",
+      "titre": "La Chambre des mots"
+    },
+    {
+      "id": "engagements",
+      "titre": "Les Engagements"
+    },
+    {
+      "id": "humain",
+      "titre": "La Galerie humaine"
+    },
+    {
+      "id": "horizon",
+      "titre": "L'Horizon"
+    }
+  ],
+  "jours": [
+    {
+      "day": 1,
+      "label": "Lundi 28 octobre 2024",
+      "short": "Jour 1",
+      "mood": "crépuscule"
+    },
+    {
+      "day": 2,
+      "label": "Mardi 29 octobre 2024",
+      "short": "Jour 2",
+      "mood": "plein jour puis nuit"
+    },
+    {
+      "day": 3,
+      "label": "Mercredi 30 octobre 2024",
+      "short": "Jour 3",
+      "mood": "midi"
+    }
+  ],
+  "compte": {
+    "salle": 7,
+    "evenement": 20,
+    "etape": 15,
+    "discours": 2,
+    "passage": 46,
+    "accord": 18,
+    "personne": 113,
+    "perspective": 4,
+    "media": 80,
+    "verif": 24
+  },
+  "schema": "../schema.json"
+}
